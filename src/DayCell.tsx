@@ -14,7 +14,9 @@ const DayCell = (props: CellProps) => {
 
   return(
     <React.Fragment>
-      <li className={"daycell"} id={String(props.day)} onClick={onclick}></li>
+      <li className={"day-cell"} id={String(props.day)} onClick={onclick}>
+        <div className="day-cell-text">{props.day}</div>
+        </li>
     </React.Fragment>
   )
 }

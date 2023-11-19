@@ -1,5 +1,5 @@
 
-.daycell {
+.day-cell {
     border: 2px solid turquoise;
     background-color: turquoise;
     border-radius: 10px;
@@ -10,6 +10,16 @@
     opacity: .6;
     caret-color: transparent;
   }
+
+.day-cell-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 2em;
+}
 
 ol, ul, li {
     list-style: none;
