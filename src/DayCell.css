@@ -1,13 +1,14 @@
 
 .day-cell {
-    border: 2px solid turquoise;
-    background-color: turquoise;
+    /* border: 2px solid turquoise; */
+    /* background: linear-gradient(135deg,#f3f6ff, #c4cbe6); */
+    background: rgb(255, 63, 98);
     border-radius: 10px;
+    /* border: 1.5px solid black; */
     margin: 10px;
     width: 80px;
     height: 80px;
-  
-    opacity: .6;
+    
     caret-color: transparent;
   }
 
@@ -19,6 +20,7 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     font-size: 2em;
+    color: white;
 }
 
 ol, ul, li {

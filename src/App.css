@@ -1,8 +1,32 @@
+
+.app-container {
+  display: flex;
+  height: 100%;
+}
+
+.title {
+  width: 100%;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(255, 63, 98);
+}
+
+body {
+  /* background: linear-gradient(#1222d4, #f0a958);
+  color: #f0a958; */
+  background: linear-gradient(0deg,#dafcff, #c4cbe6);
+  background: beige;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  height: 100%;
 }
 
 .logo {

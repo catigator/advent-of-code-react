@@ -1,0 +1,18 @@
+
+.code-viewer-container {
+    width: 50%;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+.code-viewer {
+    background: linear-gradient(135deg,#f3f6ff, #e1e7ff);
+    background: rgb(255, 63, 98);
+    border-radius: 10px;
+    /* border: 1.5px solid black; */
+    width: 90%;
+    height: 80%;
+    caret-color: transparent;
+    flex-shrink: 0;
+  }

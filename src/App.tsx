@@ -1,12 +1,18 @@
 import './App.css'
 import Grid from "./Grid";
+import CodeViewer from "./CodeViewer";
 
 function App() {
 
   return (
     <>
-      <h1>Advent of Code</h1>
-      <Grid key="IAmGrid"/>
+      <div className='title'>
+        <h1>Advent of Code</h1>
+      </div>
+      <div className='app-container'>
+        <Grid key="IAmGrid"/>
+        <CodeViewer key="IAmCodeViewer"/>
+      </div>
     </>
   )
 }
