@@ -10,6 +10,8 @@
     height: 80px;
     
     caret-color: transparent;
+    /* box-shadow: 6px 6px 0px 0px rgba(131, 218, 255, 1.0); */
+
   }
 
 .day-cell-text {

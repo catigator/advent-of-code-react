@@ -15,4 +15,5 @@
     height: 80%;
     caret-color: transparent;
     flex-shrink: 0;
+    /* box-shadow: 6px 6px 0px 0px rgba(131, 218, 255, 1); */
   }
