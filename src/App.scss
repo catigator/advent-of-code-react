@@ -15,13 +15,6 @@ $h1-height: 8em;
 .title h1 {
   margin: 0;
   padding: 0.75em;
-  // text-shadow:
-  /* -1px -1px 0 #000,
-  1px -1px 0 #000,
-  -1px 1px 0 #000,
-  1px 1px 0 #000, */
-  /* 6px 6px 0px rgba(131, 218, 255, 1); */
-
 }
 
 html, body {
@@ -31,11 +24,7 @@ html, body {
 }
 
 body {
-  /* background: linear-gradient(#1222d4, #f0a958);
-  color: #f0a958; */
-  /* background: linear-gradient(0deg,#2b3131, #b2daec); */
-  background: rgb(240, 243, 243)
-  /* background-image: url("images/stars_2.jpg"); */
+  background: rgb(240, 243, 243);
 }
 
 #root {
