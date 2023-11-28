@@ -21,14 +21,15 @@
 html, body {
   height: 100%;
   font-family: 'Montserrat', sans-serif;
-  color: rgb(255, 63, 98);
+  color: rgb(35, 31, 32)
 }
 
 body {
   /* background: linear-gradient(#1222d4, #f0a958);
   color: #f0a958; */
-  background: linear-gradient(0deg,#dafcff, #c4cbe6);
-  background: beige;
+  /* background: linear-gradient(0deg,#2b3131, #b2daec); */
+  background: rgb(241, 242, 242)
+  /* background-image: url("images/stars_2.jpg"); */
 }
 
 #root {

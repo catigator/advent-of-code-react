@@ -8,10 +8,10 @@ interface CellProps {
 
 const DayCell = (props: CellProps) => {
 
-  let onclick = () => {
-      console.log("clicked!");
+  let onclick = (event: any) => {
+      console.log("clicked! " + props.day);
   }
-
+  
   return(
     <React.Fragment>
       <li className={"day-cell"} id={String(props.day)} onClick={onclick}>
