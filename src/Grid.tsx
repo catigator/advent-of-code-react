@@ -1,7 +1,7 @@
 import React from "react";
 import DayCell from "./DayCell";
-import './Grid.css';
-import './Container.css';
+import './Grid.scss';
+import './Container.scss';
 
 
 

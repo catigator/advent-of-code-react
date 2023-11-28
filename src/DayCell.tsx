@@ -1,6 +1,6 @@
 import React from "react";
 
-import './DayCell.css';
+import './DayCell.scss';
 
 interface CellProps {
   day: number,
@@ -9,7 +9,7 @@ interface CellProps {
 const DayCell = (props: CellProps) => {
 
   let onclick = (event: any) => {
-      console.log("clicked! " + props.day);
+      console.log("clicked!   " + props.day);
   }
   
   return(

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import './CodeViewer.css';
+import './CodeViewer.scss';
 import Prism from "prismjs";
 import "./css/prism.css";
 import 'prismjs/components/prism-python'; // Language
