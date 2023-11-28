@@ -15,6 +15,10 @@
 
   }
 
+.day-cell:hover {
+    background: rgb(111, 205, 204);
+}
+
 .day-cell-text {
     text-align: center;
     position: relative;
@@ -24,6 +28,10 @@
     transform: translateY(-50%);
     font-size: 2em;
     color: rgb(45, 45, 45);
+}
+
+.day-cell:hover .day-cell-text {
+    color: white;
 }
 
 ol, ul, li {

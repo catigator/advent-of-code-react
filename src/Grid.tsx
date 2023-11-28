@@ -1,6 +1,8 @@
 import React from "react";
 import DayCell from "./DayCell";
 import './Grid.css';
+import './Container.css';
+
 
 
 const Grid = () => {
@@ -13,7 +15,14 @@ const Grid = () => {
       }
 
       const adventCalendar = []
-      adventCalendar.push(<div className="advent-calendar">{grid}</div>)
+      adventCalendar.push(
+        <div className="advent-calendar">
+          {grid}
+          <div className="container">
+
+          </div>
+          </div>
+      )
       return adventCalendar;
   }
 
