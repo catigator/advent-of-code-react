@@ -1,5 +1,9 @@
 
+@use "Variables";
+
 .advent-calendar {
-    width: 50%;
+    width: Variables.$advent-calendar-width;
+    padding-left: 2em;
+    padding-right: 2em;
     display: inline-block;
 }

@@ -1,3 +1,4 @@
+@use "Variables";
 
 .code-viewer-header {
     flex-basis: 100%;
@@ -6,7 +7,7 @@
 }
 
 .code-viewer-container {
-    width: 50%;
+    width: calc(100% - Variables.$advent-calendar-width);
     display: flex;
     justify-items: center;
     justify-content: center;
