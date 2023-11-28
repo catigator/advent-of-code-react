@@ -16,11 +16,13 @@
 .code-viewer {
     background: linear-gradient(135deg,#f3f6ff, #e1e7ff);
     background: rgb(209, 211, 212);
-    /* border-radius: 10px; */
     border: 1.5px solid rgb(45, 45, 45);
     width: 90%;
     height: 80%;
     caret-color: transparent;
     flex-shrink: 0;
-    /* box-shadow: 6px 6px 0px 0px rgba(131, 218, 255, 1); */
+  }
+
+  code[class*="language-python"], pre[class*="language-python"] {
+    font-family: 'Roboto Mono', monospace !important;
   }
