@@ -10,7 +10,7 @@
 
   }
 
-.day-cell:hover {
+  .canOpen.day-cell:hover {
     background: rgb(45, 45, 45);
 }
 
@@ -25,7 +25,11 @@
     color: rgb(45, 45, 45);
 }
 
-.day-cell:hover .day-cell-text {
+.cannotOpen .day-cell-text {
+    color: rgb(145, 145, 145);
+}
+
+.canOpen.day-cell:hover .day-cell-text {
     color: rgb(240, 243, 243);
 }
 
