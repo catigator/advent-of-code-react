@@ -9,6 +9,11 @@ const Grid = () => {
 
   let generateGrid = () => {
     const grid = []
+    let initialDays = 4;
+
+    for (let day_i = 1; day_i <= initialDays; day_i++ ) {
+      grid.push(<DayCell day={0} />);
+    }
 
     for (let day_i = 1; day_i < 25; day_i++) {
       grid.push(<DayCell day={day_i} />);

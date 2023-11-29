@@ -12,17 +12,27 @@ const DayCell = (props: CellProps) => {
       console.log("clicked!   " + props.day);
   }
 
-  const canOpen = 5 - props.day > 0;
+  let dayText = props.day.toString();
+  if (dayText === "0") {
+    dayText =  "-";
+  } 
+
+  let canOpen = 5 - props.day > 0;
+  if (dayText === "-") {
+    canOpen = false;
+  }
 
   let className = "day-cell cannotOpen"
   if (canOpen) {
     className = "day-cell canOpen"
   }
+
+
   
   return(
     <React.Fragment>
       <li className={className} id={String(props.day)} onClick={onclick}>
-        <div className="day-cell-text">{props.day}</div>
+        <div className="day-cell-text">{dayText}</div>
         </li>
     </React.Fragment>
   )
