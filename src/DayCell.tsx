@@ -1,6 +1,6 @@
 import React from "react";
 
-import './DayCell.scss';
+import './css/DayCell.scss';
 
 interface CellProps {
   day: number,

@@ -1,4 +1,4 @@
-import './App.scss'
+import './css/App.scss'
 import LeftPage from "./LeftPage";
 import CodeViewer from "./CodeViewer";
 
