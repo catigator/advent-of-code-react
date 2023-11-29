@@ -1,6 +1,6 @@
-import './css/App.scss'
-import LeftPage from "./LeftPage";
-import CodeViewer from "./CodeViewer";
+import '../css/App.scss'
+import LeftPage from "../components/LeftPage";
+import CodeViewer from "../components/CodeViewer";
 
 function App() {
 

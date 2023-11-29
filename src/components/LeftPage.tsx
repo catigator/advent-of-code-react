@@ -1,7 +1,7 @@
 import React from "react";
-import DayCell from "./DayCell";
-import PuzzleViewer from "./PuzzleViewer";
-import './css/LeftPage.scss';
+import DayCell from "../components/DayCell";
+import PuzzleViewer from "../components/PuzzleViewer";
+import '../css/LeftPage.scss';
 
 
 
