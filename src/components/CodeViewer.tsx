@@ -3,8 +3,8 @@ import '../css/CodeViewer.scss';
 import Prism from "prismjs";
 import "../css/prism.css";
 import 'prismjs/components/prism-python'; // Language
-import "prismjs/themes/prism-tomorrow.css";
-
+// import "prismjs/themes/prism-tomorrow.css";
+import "../css/prism-material-light.scss";
 
 
 let Code = function (code: string, language: string) {
