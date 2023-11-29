@@ -1,3 +1,5 @@
+@use "Variables";
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -10,10 +12,10 @@
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgb(45, 45, 45); 
+    background: Variables.$kinda-black; 
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(45, 45, 45); 
+    background: Variables.$kinda-black; 
   }

@@ -4,7 +4,7 @@
 .day-cell {
     // background: rgb(209, 211, 212);
     background: rgb(240, 243, 243);
-    outline: 1.5px solid rgb(45, 45, 45);
+    outline: Variables.$outline;
 
     width: 3em;
     height: 3em;
@@ -25,7 +25,7 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     font-size: 1.75em;
-    color: rgb(45, 45, 45);
+    color: Variables.$kinda-black;
 }
 
 .cannotOpen .day-cell-text {
@@ -37,7 +37,7 @@
 }
 
 .day-cell.selectedDay {
-    background: rgb(45, 45, 45);
+    background: Variables.$kinda-black;
     .day-cell-text {
         color: rgb(240, 243, 243);
     }

@@ -7,10 +7,9 @@
     background: rgb(240 243 243);
     margin-top: 1em;
     
-    // outline: 1.5px solid rgb(45, 45, 45);
     overflow-y:scroll;
  
-    color: rgb(45, 45, 45);
+    color: Variables.$kinda-black;
  }
 
 .puzzle-viewer {
@@ -52,8 +51,8 @@ code {
     height: 70%;
     background: rgb(240 243 243);
     
-    border: 1.5px solid rgb(45, 45, 45);
+    outline: Variables.$outline;
     overflow-y:scroll;
     margin-left: 10px;
-    color: rgb(45, 45, 45);
+    color: Variables.$kinda-black;
  }
