@@ -2,8 +2,7 @@
 
 
 .day-cell {
-    // background: rgb(209, 211, 212);
-    background: rgb(240, 243, 243);
+    background: Variables.$kinda-white;
     outline: Variables.$outline;
 
     width: 3em;
@@ -33,13 +32,13 @@
 }
 
 .canOpen.day-cell:hover .day-cell-text {
-    color: rgb(240, 243, 243);
+    color: Variables.$kinda-white;
 }
 
 .day-cell.selectedDay {
     background: Variables.$kinda-black;
     .day-cell-text {
-        color: rgb(240, 243, 243);
+        color: Variables.$kinda-white;
     }
 }
 

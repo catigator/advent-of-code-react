@@ -15,7 +15,7 @@
     justify-items: center;
     font-family: "EB Garamond", serif;
     font-weight: 700;
-    background: rgb(240, 243, 243);
+    background: Variables.$kinda-white;
     outline: Variables.$outline;
     color: Variables.$kinda-black;
     flex-direction: column;
@@ -38,8 +38,7 @@ html, body {
 }
 
 body {
-  // background: rgb(240, 243, 243);
-  background: rgb(209, 211, 212);
+  background: Variables.$kinda-grey;
 }
 
 #root {
