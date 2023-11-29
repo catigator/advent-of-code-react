@@ -5,18 +5,18 @@
 .left-app {
     width: 55vw;
     margin-top: Variables.$margin-edges;
-    margin-left: calc(Variables.$margin-edges + Variables.$margin-cell-offset);
+    margin-left: Variables.$margin-edges;
     display: flex;
     flex-shrink: 0;
     justify-items: start;
     justify-content: start;
     flex-wrap: wrap;
     align-content: start;
-    height: 100%;
 }
 
 .advent-calendar {
     width: 40%;
+    height: 25%;
     // height: 16em;
     // padding-left: 2em;
     // padding-right: 2em;

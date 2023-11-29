@@ -31,10 +31,11 @@ const Grid = () => {
         <div className="advent-calendar">
           {grid}
         </div>
-        <div className='title'>
-          <h1>Advent of Code</h1>
+        <div className='title-container'>
+          <div className='title'>
+            <h1>Advent of Code 2023</h1>
+          </div>
         </div>
-        {/* <div className="container-snow"></div> */}
         <PuzzleViewer/>
       </div>
     )

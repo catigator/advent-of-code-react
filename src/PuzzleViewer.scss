@@ -1,6 +1,48 @@
+@use "Variables";
+
+.container-problem {
+    align-self: stretch;
+    width: 100%;
+    height: 67.3%;
+    background: rgb(240 243 243);
+    margin-top: 1em;
+    
+    // outline: 1.5px solid rgb(45, 45, 45);
+    overflow-y:scroll;
+ 
+    color: rgb(45, 45, 45);
+ }
 
 .puzzle-viewer {
     .day-desc {
         padding: 1em;
+        font-size: large;
+        text-align: left;
     }
 }
+
+article em.star {
+    color: #ff6666;
+    font-style: normal;
+    text-shadow: 0 0 5px #ff6666;
+}
+
+article pre {
+    font-family: 'Roboto Mono';
+    color: #f0f3f3;
+    background: #2d2d2d;
+    text-align: left;
+    white-space: pre;
+    display: block;
+    text-indent: 2em;
+    padding-top: 1em;
+}
+
+code {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    white-space-collapse: preserve;
+}
+
