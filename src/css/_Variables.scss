@@ -4,8 +4,9 @@
 $margin-edges: 2em;
 
 $kinda-black:rgb(45, 45, 45);
-$kinda-grey: rgb(209, 211, 212);
 $kinda-white: rgb(240, 243, 243);
+// $kinda-grey: rgb(209, 211, 212);
+$kinda-grey: $kinda-white;
 
 $outline: 1.5px solid $kinda-black;
 
