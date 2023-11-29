@@ -8,7 +8,7 @@ interface CellProps {
 
 const DayCell = (props: CellProps) => {
 
-  let onclick = (event: any) => {
+  let onclick = () => {
       console.log("clicked!   " + props.day);
   }
 

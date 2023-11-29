@@ -16,9 +16,8 @@
     font-family: "EB Garamond", serif;
     font-weight: 700;
     background: rgb(240, 243, 243);
-    border: 1.5px solid rgb(45, 45, 45);
+    outline: 1.5px solid rgb(45, 45, 45);
     color: rgb(45, 45, 45);
-    margin: Variables.$margin-cell-offset;
     flex-direction: column;
 }
 

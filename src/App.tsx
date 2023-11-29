@@ -1,5 +1,5 @@
 import './App.scss'
-import Grid from "./Grid";
+import LeftPage from "./LeftPage";
 import CodeViewer from "./CodeViewer";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <div className='app-container'>
-        <Grid key="IAmGrid"/>
+        <LeftPage key="IAmLeftPage"/>
         <CodeViewer key="IAmCodeViewer"/>
       </div>
     </>

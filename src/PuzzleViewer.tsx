@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import './Container.scss';
 import './PuzzleViewer.scss';
+import './scrollbar.scss';
 import day1Html from "./day_1_example.ts";
 
 const PuzzleViewer = () => {

@@ -1,14 +1,13 @@
 import React from "react";
 import DayCell from "./DayCell";
 import PuzzleViewer from "./PuzzleViewer";
-import './Grid.scss';
-import './Container.scss';
+import './LeftPage.scss';
 
 
 
-const Grid = () => {
+const LeftPage = () => {
 
-  let generateGrid = () => {
+  let generateLeftPage = () => {
     const grid = []
     let initialDays = 4;
 
@@ -42,13 +41,13 @@ const Grid = () => {
     return adventCalendar;
   }
 
-  const reactGrid = generateGrid();
+  const reactLeftPage = generateLeftPage();
 
   return (
     <React.Fragment>
-      {reactGrid}
+      {reactLeftPage}
     </React.Fragment>
   )
 }
 
-export default Grid
+export default LeftPage
