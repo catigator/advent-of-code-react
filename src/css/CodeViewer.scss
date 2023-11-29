@@ -25,8 +25,8 @@
 
 .code-viewer {
     background: linear-gradient(135deg,#f3f6ff, #e1e7ff);
-    background: rgb(240 243 243);
-    outline: 1.5px solid rgb(45, 45, 45);
+    background: Variables.$kinda-white;
+    outline: Variables.$outline;
     width: 90%;
     height: 96%;
     caret-color: transparent;
