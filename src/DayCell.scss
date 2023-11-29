@@ -4,16 +4,16 @@
 .day-cell {
     background: rgb(209, 211, 212);
     border: 1.5px solid rgb(45, 45, 45);
-    
+
     width: 3em;
     height: 3em;
     margin: Variables.$margin-cell-offset;
     caret-color: transparent;
 
-  }
+}
 
-  .canOpen.day-cell:hover {
-    background: rgb(45, 45, 45);
+.canOpen.day-cell:hover {
+    background: rgb(145, 145, 145);
 }
 
 .day-cell-text {
@@ -35,8 +35,17 @@
     color: rgb(240, 243, 243);
 }
 
-ol, ul, li {
+.day-cell.selectedDay {
+    background: rgb(45, 45, 45);
+    .day-cell-text {
+        color: rgb(240, 243, 243);
+    }
+}
+
+
+ol,
+ul,
+li {
     list-style: none;
     display: inline-block;
 }
-

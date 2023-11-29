@@ -27,11 +27,14 @@ const DayCell = (props: CellProps) => {
     className = "day-cell canOpen"
   }
 
-
+  let selectedDay = "";
+  if (props.day === 1) {
+    selectedDay = " selectedDay"
+  }
   
   return(
     <React.Fragment>
-      <li className={className} id={String(props.day)} onClick={onclick}>
+      <li className={className + selectedDay} id={String(props.day)} onClick={onclick}>
         <div className="day-cell-text">{dayText}</div>
         </li>
     </React.Fragment>

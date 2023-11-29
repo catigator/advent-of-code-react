@@ -11,12 +11,17 @@ const Grid = () => {
     const grid = []
     let initialDays = 4;
 
-    for (let day_i = 1; day_i <= initialDays; day_i++ ) {
+    for (let day_i = 0; day_i < initialDays; day_i++ ) {
       grid.push(<DayCell day={0} />);
     }
 
     for (let day_i = 1; day_i < 25; day_i++) {
       grid.push(<DayCell day={day_i} />);
+    }
+
+    let finalDays = 4;  
+    for (let day_i = 0; day_i < finalDays; day_i++ ) {
+      grid.push(<DayCell day={0} />);
     }
 
     const adventCalendar = []
