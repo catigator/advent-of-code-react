@@ -10,29 +10,33 @@ const Grid = () => {
   let generateGrid = () => {
     const grid = []
 
-    for (let day_i = 1; day_i < 25; day_i ++) {
-        grid.push(<DayCell day={day_i}/>);  
-      }
+    for (let day_i = 1; day_i < 25; day_i++) {
+      grid.push(<DayCell day={day_i} />);
+    }
 
-      const adventCalendar = []
-      adventCalendar.push(
+    const adventCalendar = []
+    adventCalendar.push(
+      <div className="left-app">
         <div className="advent-calendar">
           {grid}
-          <div className="container">
-
-          </div>
-          </div>
-      )
-      return adventCalendar;
+        </div>
+        <div className='title'>
+          <h1>Advent of Code</h1>
+        </div>
+        {/* <div className="container-snow"></div> */}
+        <div className="container-problem"></div>
+      </div>
+    )
+    return adventCalendar;
   }
 
   const reactGrid = generateGrid();
-      
-  return(
+
+  return (
     <React.Fragment>
       {reactGrid}
     </React.Fragment>
   )
 }
-  
+
 export default Grid

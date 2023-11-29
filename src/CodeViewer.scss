@@ -1,5 +1,13 @@
 @use "Variables";
 
+.right-app {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: Variables.$margin-edges;
+    margin-right: Variables.$margin-edges;
+  }
+
 .code-viewer-header {
     flex-basis: 100%;
     width: 100%;
@@ -7,10 +15,12 @@
 }
 
 .code-viewer-container {
-    width: calc(100% - Variables.$advent-calendar-width);
+    width: 100%;
     display: flex;
     justify-items: center;
     justify-content: center;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 .code-viewer {
@@ -26,3 +36,4 @@
   code[class*="language-python"], pre[class*="language-python"] {
     font-family: 'Roboto Mono', monospace !important;
   }
+

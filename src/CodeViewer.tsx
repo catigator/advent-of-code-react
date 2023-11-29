@@ -35,7 +35,7 @@ const CodeViewer = () => {
       <div className="code-viewer-container"> 
         <div className="code-viewer">
         <div className="code-viewer-header">
-          day_01.py
+          Day 1
         </div>
           {Code(code, "python")}
         </div>
@@ -55,7 +55,9 @@ const CodeViewer = () => {
 
   return (
     <React.Fragment>
-      {reactCodeViewer}
+      <div className="right-app">
+        {reactCodeViewer}
+      </div>
     </React.Fragment>
   )
 }

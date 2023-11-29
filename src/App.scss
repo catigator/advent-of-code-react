@@ -3,11 +3,11 @@
 .app-container {
   display: flex;
   height: calc(100% - Variables.$h1-height);
-  width: 100vh;
+  width: 100vw;
 }
 
 .title {
-  width: 100%;
+  width: 50%;
   height: Variables.$h1-height;
   margin: 0;
   font-family: 'EB Garamond', serif;
@@ -22,6 +22,7 @@ html, body {
   height: 100vh;
   font-family: 'Montserrat', sans-serif;
   color: rgb(45, 45, 45);
+  caret-color: transparent;
 }
 
 body {
@@ -29,13 +30,15 @@ body {
 }
 
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  // max-width: 1280px;
+  // margin: 0 auto;
+  margin: 0;
   padding-left: 2rem;
   padding-right: 2rem;
   text-align: center;
   height: 100vh;  
   max-height: 100vh;
+  width: 100%;
 }
 
 .logo {

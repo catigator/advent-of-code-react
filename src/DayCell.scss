@@ -1,11 +1,13 @@
+@use "Variables";
+
 
 .day-cell {
     background: rgb(209, 211, 212);
     border: 1.5px solid rgb(45, 45, 45);
     
-    width: 3.5em;
-    height: 3.5em;
-    margin: -1.5px;
+    width: 3em;
+    height: 3em;
+    margin: Variables.$margin-cell-offset;
     caret-color: transparent;
 
   }
@@ -21,7 +23,7 @@
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    font-size: 2em;
+    font-size: 1.75em;
     color: rgb(45, 45, 45);
 }
 

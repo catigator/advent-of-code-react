@@ -1,9 +1,17 @@
- .container {
-    display: block;
-    width: 100%;
-    height: 2em;
-    margin: 5px;
-    background: rgb(209, 211, 212);
-    border: 1.5px solid rgb(45, 45, 45);
-    display: none;
- }
+.container-snow {
+   width: 47%;
+   height: 9em;
+   margin-left: 1em;
+   margin-right: 1em;
+   margin-top: -1.5px; // Because we needed this margin on cells
+   background: rgb(209, 211, 212);
+   border: 1.5px solid rgb(45, 45, 45);
+}
+
+.container-problem {
+   align-self: stretch;
+   width: 100%;
+   height: 15em;
+   background: rgb(209, 211, 212);
+   border: 1.5px solid rgb(45, 45, 45);
+}
