@@ -3,7 +3,7 @@
 
 
 .left-app {
-    width: 50vw;
+    width: 55vw;
     margin-top: Variables.$margin-edges;
     margin-left: calc(Variables.$margin-edges + Variables.$margin-cell-offset);
     display: flex;
@@ -12,11 +12,11 @@
     justify-content: start;
     flex-wrap: wrap;
     align-content: start;
-    height: 10%;
+    height: 100%;
 }
 
 .advent-calendar {
-    width: 45%;
+    width: 40%;
     // height: 16em;
     // padding-left: 2em;
     // padding-right: 2em;

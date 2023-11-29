@@ -1,5 +1,6 @@
 import React from "react";
 import DayCell from "./DayCell";
+import PuzzleViewer from "./PuzzleViewer";
 import './Grid.scss';
 import './Container.scss';
 
@@ -19,7 +20,7 @@ const Grid = () => {
       grid.push(<DayCell day={day_i} />);
     }
 
-    let finalDays = 4;  
+    let finalDays = 0;  
     for (let day_i = 0; day_i < finalDays; day_i++ ) {
       grid.push(<DayCell day={0} />);
     }
@@ -34,7 +35,7 @@ const Grid = () => {
           <h1>Advent of Code</h1>
         </div>
         {/* <div className="container-snow"></div> */}
-        <div className="container-problem"></div>
+        <PuzzleViewer/>
       </div>
     )
     return adventCalendar;
