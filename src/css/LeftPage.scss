@@ -4,8 +4,9 @@
 
 .left-app {
     width: 55vw;
-    margin-top: Variables.$margin-edges;
-    margin-left: Variables.$margin-edges;
+    margin-top: Variables.$margin-top-bottom-edges;
+    margin-bottom: Variables.$margin-top-bottom-edges;
+    margin-left: Variables.$margin-left-right-edges;
     display: flex;
     flex-shrink: 0;
     justify-items: start;
@@ -15,11 +16,9 @@
 }
 
 .advent-calendar {
-    width: 40%;
+    width: 30%;
     height: 25%;
-    // height: 16em;
-    // padding-left: 2em;
-    // padding-right: 2em;
-    margin-bottom: 1em;
+    margin: Variables.$margin-components;
     flex-shrink: 0;
+    flex-grow: 1;
 }

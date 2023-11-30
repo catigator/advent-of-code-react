@@ -4,8 +4,8 @@
     width: 50%;
     display: flex;
     flex-wrap: wrap;
-    margin-top: Variables.$margin-edges;
-    margin-right: Variables.$margin-edges;
+    margin-top: Variables.$margin-top-bottom-edges;
+    margin-right: Variables.$margin-left-right-edges;
   }
 
 .code-viewer-header {
@@ -21,8 +21,7 @@
     display: flex;
     justify-items: center;
     justify-content: center;
-    // margin-left: 2em;
-    margin-right: 2em;
+    margin: Variables.$margin-components;
 }
 
 .code-viewer {

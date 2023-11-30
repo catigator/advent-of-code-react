@@ -5,14 +5,13 @@
     width: 100%;
     height: 67.3%;
     background: Variables.$kinda-white;
-    margin-top: 1em;
-    
     overflow-y:scroll;
  
     color: Variables.$kinda-black;
  }
 
 .puzzle-viewer {
+    margin: Variables.$margin-components;
     .day-desc {
         padding: 1em;
         font-size: large;
@@ -48,7 +47,6 @@ code {
 .container-problem {
     align-self: stretch;
     width: 100%;
-    height: 70%;
     background: Variables.$kinda-white;
     
     outline: Variables.$outline;
