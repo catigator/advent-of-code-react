@@ -11,11 +11,8 @@ const DayCell = (props: CellProps) => {
   let onclick = () => {
       console.log("clicked!   " + props.day);
   }
-
+  
   let dayText = props.day.toString();
-  if (dayText === "0") {
-    dayText =  "-";
-  } 
 
   let canOpen = 5 - props.day > 0;
   if (dayText === "-") {
@@ -31,6 +28,11 @@ const DayCell = (props: CellProps) => {
   if (props.day === 1) {
     selectedDay = " selectedDay"
   }
+
+  if (dayText === "0") {
+    dayText =  "-";
+    className += " hidden"
+  } 
   
   return(
     <React.Fragment>
