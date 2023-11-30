@@ -35,7 +35,7 @@ const CodeViewer = () => {
       <div className="code-viewer-container"> 
         <div className="code-viewer">
         <div className="code-viewer-header">
-          Day 1
+          Code
         </div>
           {Code(code, "python")}
         </div>

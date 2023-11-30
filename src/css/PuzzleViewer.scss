@@ -8,6 +8,7 @@
     overflow-y:scroll;
     color: Variables.$kinda-black;
     outline: Variables.$outline;
+    outline-offset: -1.5px;
  }
 
 .puzzle-viewer-component {
