@@ -29,7 +29,8 @@ article em.star {
 }
 
 article pre {
-    font-family: 'Roboto Mono';
+    // This is not actually used for whatever reason
+    font-family: 'Space Mono' !important;
     // color: Variables.$kinda-white;
     // background: Variables.$kinda-black;
     text-align: left;
