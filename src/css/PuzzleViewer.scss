@@ -13,7 +13,7 @@
 
 .puzzle-viewer-component {
     margin: Variables.$margin-components;
-    height: 63%;
+    height: calc(100% - 16.5em);
 }
 
 .puzzle-viewer .day-desc {

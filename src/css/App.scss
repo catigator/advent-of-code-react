@@ -9,7 +9,7 @@
 .title-container {
     width: 45%;
     flex-grow: 1;
-    height: 12em;
+    height: 10em;
     // margin: Variables.$margin-components;
     margin: Variables.$margin-components;
     display: flex;
@@ -25,6 +25,7 @@
 
 .title {
   margin: auto;
+  font-size: small;
 }
 
 .title h1 {
