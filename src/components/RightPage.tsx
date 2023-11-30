@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import CodeViewer from "./CodeViewer";
 import '../css/RightPage.scss';
 
