@@ -55,9 +55,7 @@ const CodeViewer = () => {
 
   return (
     <React.Fragment>
-      <div className="right-app">
-        {reactCodeViewer}
-      </div>
+      {reactCodeViewer}
     </React.Fragment>
   )
 }

@@ -1,6 +1,6 @@
 import '../css/App.scss'
 import LeftPage from "../components/LeftPage";
-import CodeViewer from "../components/CodeViewer";
+import RightPage from "../components/RightPage";
 
 function App() {
 
@@ -8,7 +8,7 @@ function App() {
     <>
       <div className='app-container'>
         <LeftPage key="IAmLeftPage"/>
-        <CodeViewer key="IAmCodeViewer"/>
+        <RightPage key="IAmRightPage"/>
       </div>
     </>
   )

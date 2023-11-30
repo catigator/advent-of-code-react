@@ -1,0 +1,19 @@
+@use "Variables";
+
+.right-app {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: Variables.$margin-top-bottom-edges;
+    margin-right: Variables.$margin-left-right-edges;
+  }
+
+  .config-bar {
+    width: 100%;
+    height: 3em;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    margin: Variables.$margin-components;
+    outline: Variables.$outline;
+}
