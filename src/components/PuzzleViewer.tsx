@@ -5,7 +5,7 @@ import day1Html from "../data/day_1_example.ts";
 
 const PuzzleViewer = () => {
 
-  let[htmlFileString, setHtmlFileString] = useState("");
+  let [htmlFileString, setHtmlFileString] = useState("");
 
   async function fetchHtml() {
     let htmlString = await (await fetch(`../data/day_1_example.html`)).text();
@@ -25,18 +25,23 @@ const PuzzleViewer = () => {
     console.log(htmlFileString);
 
     const puzzleViewer = (
-            <div className="puzzle-viewer container-problem" dangerouslySetInnerHTML={{ __html: day1Html }}>
-            </div>
+      <div className="puzzle-viewer-component">
+        <div className="code-viewer-header">
+          Puzzle
+        </div>
+        <div className="puzzle-viewer container-problem" dangerouslySetInnerHTML={{ __html: day1Html }}>
+        </div>
+      </div>
     )
-  
+
     return puzzleViewer;
   }
-  
+
   let puzzleViewer = generatePuzzleViewer();
 
   return (
     <React.Fragment>
-        {puzzleViewer}
+      {puzzleViewer}
     </React.Fragment>
   )
 }
