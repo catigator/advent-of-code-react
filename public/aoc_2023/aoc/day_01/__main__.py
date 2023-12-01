@@ -15,6 +15,14 @@ EXAMPLE_FILENAME = "aoc/day_01/EXAMPLE_01.txt"
 @time_it
 def solve_part_1():
     print("Day 01 - Part 1")
+    lines = read_input_lines(INPUT_FILENAME)
+    sums = []
+    for line in lines:
+        number_chars = [c for c in line if c.isnumeric()]
+        number_string = number_chars[0] + number_chars[-1]
+        number = int(number_string)
+        sums.append(number)
+    print(sum(sums))
 
 
 @time_it
