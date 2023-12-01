@@ -54,7 +54,7 @@ def download_description_html(day):
     r = requests.get(input_url, cookies=cookies)
     r.raise_for_status()
     soup = BeautifulSoup(r.content, 'html.parser')
-    puzzle = soup.find(class_="day-desc")
+    puzzle = soup.find("main")
     save_to_file(str(puzzle), f"aoc/day_{leading_zero(day)}/PUZZLE.html")
     return puzzle
 
