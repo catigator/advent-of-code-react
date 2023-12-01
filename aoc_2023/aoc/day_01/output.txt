@@ -1,0 +1,6 @@
+Day 01 - Part 1
+The sum of all of the calibration values is 54916
+[2023-12-01 12:33:07.468217] Time taken to execute 'solve_part_1' was 0.002546072006225586 seconds
+Day 01 - Part 2
+The sum of all calibration values is 54728
+[2023-12-01 12:33:07.489778] Time taken to execute 'solve_part_2' was 0.021506071090698242 seconds
