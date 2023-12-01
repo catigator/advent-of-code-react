@@ -14,6 +14,7 @@ INPUT_FILENAME = "aoc/day_01/INPUT.txt"
 EXAMPLE_FILENAME = "aoc/day_01/EXAMPLE_01.txt"
 EXAMPLE_FILENAME_2 = "aoc/day_01/EXAMPLE_02.txt"
 
+
 @time_it
 def solve_part_1():
     print("Day 01 - Part 1")
@@ -75,6 +76,7 @@ DIGITS_TO_INT = {
 
 def regex_sort_attribute(item):
     return item.regs[0]
+
 
 def compare_regex_match_start_positions(item1, item2):
     return item1.regs[0] < item2.regs[0]
