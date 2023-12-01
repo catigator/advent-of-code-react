@@ -48,15 +48,17 @@ def download_input(day):
     return r.text
 
 
-def download_description_html(day):
+def download_puzzle_html(day):
     input_url = f"https://adventofcode.com/{YEAR}/day/{day}"
     cookies = browser_cookie3.chrome(domain_name='adventofcode.com')
     r = requests.get(input_url, cookies=cookies)
     r.raise_for_status()
     soup = BeautifulSoup(r.content, 'html.parser')
-    puzzle = soup.find("main")
-    save_to_file(str(puzzle), f"aoc/day_{leading_zero(day)}/PUZZLE.html")
-    return puzzle
+    puzzles = soup.find_all(class_="day-desc")
+    puzzles_str = [str(puzzle) for puzzle in puzzles]
+    puzzle_html = "\n<p></p>\n".join(puzzles_str)
+    save_to_file(puzzle_html, f"aoc/day_{leading_zero(day)}/PUZZLE.html")
+    return puzzle_html
 
 
 @click.command()
@@ -70,7 +72,7 @@ def download_all(day):
     download_input(day)
     download_puzzle(day)
     download_examples(day)
-    download_description_html(day)
+    download_puzzle_html(day)
     print(f"Download complete!")
 
 
