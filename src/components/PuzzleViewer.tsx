@@ -1,39 +1,39 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import '../css/PuzzleViewer.scss';
 import '../css/scrollbar.scss';
-import day1Html from "../data/day_1_example.html?url";
-// import pythonExample from "../aoc_2023/aoc/day_01/__main__.py?url"; // works!!!
-import publicBase from "/?url" // works!!
-// import day1Html from "../data/day_1_example";
+import day1HtmlString from "../data/aoc_2023/aoc/day_01/PUZZLE.html?raw";
+// import day1Html from "data/aoc_2023/aoc/day_01/PUZZLE.html?url";
+// import pythonExample from "/aoc_2023/aoc/day_01/__main__.py?url"; // works!!!
+// import publicBase from "/?url" // works!!
 
 const PuzzleViewer = () => {
 
-  let [htmlFileString, setHtmlFileString] = useState("");
+  // let [htmlFileString, setHtmlFileString] = useState("");
 
-  async function fetchHtml(url: string) {
-    const htmlString = await (await fetch(url)).text();
-    console.log(htmlString);
-    setHtmlFileString(htmlString);
-    console.log(htmlFileString);
+  // async function fetchHtml(url: string) {
+  //   const htmlString = await (await fetch(url)).text();
+  //   console.log(htmlString);
+  //   setHtmlFileString(htmlString);
+  //   console.log(htmlFileString);
+  //   // console.log(pythonExample);
 
-  }
+  // }
 
-  useEffect(() => {
-    fetchHtml( publicBase + "aoc_2023/aoc/day_01/__main__.py"); // works!
-    fetchHtml(day1Html); // works!
-  }, []);
+  // useEffect(() => {
+  //   // fetchHtml( publicBase + "aoc_2023/aoc/day_01/__main__.py"); // works!
+  //   fetchHtml(day1Html); // works!
+  // }, []);
 
   let generatePuzzleViewer = () => {
 
     // fetchHtml();
-    console.log(htmlFileString);
 
     const puzzleViewer = (
       <div className="puzzle-viewer-component">
         <div className="code-viewer-header">
           Puzzle
         </div>
-        <div className="puzzle-viewer container-problem" dangerouslySetInnerHTML={{ __html: htmlFileString }}>
+        <div className="puzzle-viewer container-problem" dangerouslySetInnerHTML={{ __html: day1HtmlString }}>
         </div>
       </div>
     )

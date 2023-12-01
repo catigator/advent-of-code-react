@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import '../css/CodeViewer.scss';
 import Prism from "prismjs";
 import "../css/prism.css";
@@ -6,8 +6,10 @@ import 'prismjs/components/prism-python'; // Language
 // import "prismjs/themes/prism-tomorrow.css";
 import "../css/prism-material-light.scss";
 import '../css/scrollbar.scss';
-import publicBase from "/?url"
+import pythonDay1String from "../data/aoc_2023/aoc/day_01/__main__.py?raw";
 
+// import publicBase from "/?url"
+// import pythonDay1 from "/aoc_2023/aoc/day_01/__main__.py?url";
 
 let Code = function (code: string, language: string) {
   useEffect(() => {
@@ -26,31 +28,29 @@ let Code = function (code: string, language: string) {
 
 const CodeViewer = () => {
 
-  let [codeFileString, setCodeFileString] = useState("");
+  // let [codeFileString, setCodeFileString] = useState("");
 
-  async function fetchHtml(url: string) {
-    const codeString = await (await fetch(url)).text();
-    console.log(codeString);
-    setCodeFileString(codeString);
-    console.log(codeFileString);
-  }
+  // async function fetchHtml(url: string) {
+  //   const codeString = await (await fetch(url)).text();
+  //   console.log(codeString);
+  //   setCodeFileString(codeString);
+  //   console.log(codeFileString);
+  // }
 
-  useEffect(() => {
-    fetchHtml( publicBase + "aoc_2023/aoc/day_01/__main__.py");
-  }, []);
+  // useEffect(() => {
+  //   // fetchHtml(publicBase + "aoc_2023/aoc/day_01/__main__.py");
+  //   fetchHtml(pythonDay1);
+  // }, []);
   
-  useEffect(() => {
-    Prism.highlightAll();
-  }, [codeFileString]);
+  // useEffect(() => {
+  //   Prism.highlightAll();
+  // }, [codeFileString]);
 
 
   let generateCodeViewer = () => {
 
-    // const code = `def some_function():
-    //     a = 4 + 3
-    //     return a
-    //     `
-    fetchHtml( publicBase + "aoc_2023/aoc/day_01/__main__.py");
+    // fetchHtml( publicBase + "aoc_2023/aoc/day_01/__main__.py");
+    // fetchHtml(pythonDay1);
 
     const codeViewer = (
       <div className="code-viewer-container"> 
@@ -59,7 +59,7 @@ const CodeViewer = () => {
           Code
         </div>
         <div className="code-container">
-          {Code(codeFileString, "python")}
+          {Code(pythonDay1String, "python")}
           </div>
         </div>
       </div>
