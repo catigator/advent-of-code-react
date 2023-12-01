@@ -5,6 +5,7 @@ import "../css/prism.css";
 import 'prismjs/components/prism-python'; // Language
 // import "prismjs/themes/prism-tomorrow.css";
 import "../css/prism-material-light.scss";
+import '../css/scrollbar.scss';
 import publicBase from "/?url"
 
 
