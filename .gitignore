@@ -1,3 +1,10 @@
+### Python ###
+
+*.pyc
+__pycache__/
+public/aoc_2023/__pycache__/
+
+
 ### Node ###
 # Logs
 logs
