@@ -36,6 +36,11 @@ const LeftPage = () => {
           </div>
         </div>
         <PuzzleViewer/>
+        <div className='copyright-container'>
+          <div className='copyright'>
+          © 2023 Jakob Pettersson Peeker
+          </div>
+        </div>
       </div>
     )
     return adventCalendar;
