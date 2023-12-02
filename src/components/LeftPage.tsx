@@ -1,6 +1,7 @@
 import React from "react";
 import DayCell from "../components/DayCell";
 import PuzzleViewer from "../components/PuzzleViewer";
+import CodeViewer from "./CodeViewer";
 import '../css/LeftPage.scss';
 
 
@@ -11,7 +12,7 @@ const LeftPage = () => {
     const grid = []
     let initialDays = 4;
 
-    for (let day_i = 0; day_i < initialDays; day_i++ ) {
+    for (let day_i = 0; day_i < initialDays; day_i++) {
       grid.push(<DayCell day={0} />);
     }
 
@@ -19,26 +20,30 @@ const LeftPage = () => {
       grid.push(<DayCell day={day_i} />);
     }
 
-    let finalDays = 0;  
-    for (let day_i = 0; day_i < finalDays; day_i++ ) {
+    let finalDays = 0;
+    for (let day_i = 0; day_i < finalDays; day_i++) {
       grid.push(<DayCell day={0} />);
     }
 
     const adventCalendar = []
     adventCalendar.push(
       <div className="left-app">
-        <div className="advent-calendar">
-          {grid}
-        </div>
-        <div className='title-container'>
-          <div className='title'>
-            <h1>Advent of Code 2023</h1>
+        <div className="calendar-and-title">
+          <div className="advent-calendar">
+            {grid}
+          </div>
+          <div className='title-container'>
+            <div className='title'>
+              <h1>Advent of Code 2023</h1>
+            </div>
           </div>
         </div>
-        <PuzzleViewer/>
-        <div className='copyright-container'>
-          <div className='copyright'>
-          © 2023 Jakob Pettersson Peeker
+        <div className="code-and-copyright">
+          <CodeViewer key="IAmCodeViewer" />
+          <div className='copyright-container'>
+            <div className='copyright'>
+              © 2023 Jakob Pettersson Peeker
+            </div>
           </div>
         </div>
       </div>

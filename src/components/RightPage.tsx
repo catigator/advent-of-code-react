@@ -1,5 +1,5 @@
 import React from "react";
-import CodeViewer from "./CodeViewer";
+import PuzzleViewer from "./PuzzleViewer";
 import '../css/RightPage.scss';
 
 
@@ -21,7 +21,7 @@ const RightPage = () => {
     <React.Fragment>
       <div className="right-app">
         {reactConfigBar}
-        <CodeViewer key="IAmCodeViewer"/>
+        <PuzzleViewer/>
       </div>
     </React.Fragment>
   )

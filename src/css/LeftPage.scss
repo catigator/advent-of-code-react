@@ -13,6 +13,23 @@
     justify-content: start;
     flex-wrap: wrap;
     align-content: start;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.calendar-and-title {
+    width: 100%;
+    display: flex;
+}
+
+.code-and-copyright {
+    width: 100%;
+    height: calc(100% - 12em);
+    display: flex;
+    margin: auto;
+    align-items: stretch;
+    align-content: start;
+    flex-direction: column;
 }
 
 .advent-calendar {
@@ -24,7 +41,7 @@
 .copyright-container {
     width: 100%;
     text-align: left;
-    margin-top: 2em;
+    // margin-top: 2em;
     margin-left: 1.25em;
     font-size: small;
   }
