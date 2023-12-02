@@ -59,13 +59,13 @@ def get_game(line) -> Game:
     return game
 
 
-def is_possible(cnp: ColorShow):
-    return cnp.number <= TOTALS[cnp.color]
+def is_possible(color_show: ColorShow):
+    return color_show.number <= TOTALS[color_show.color]
 
 
 def is_game_possible(game: Game):
-    for tup in game.color_shows:
-        if not is_possible(tup):
+    for color_show in game.color_shows:
+        if not is_possible(color_show):
             return False
 
     return True

@@ -1,6 +1,6 @@
 Day 02 - Part 1
 The sums of IDs of successful games is 1867
-[2023-12-02 10:02:34.150579] Time taken to execute 'solve_part_1' was 0.002067089080810547 seconds
+[2023-12-02 10:06:57.688605] Time taken to execute 'solve_part_1' was 0.0015022754669189453 seconds
 Day 02 - Part 2
 The sums of all powers is 84538
-[2023-12-02 10:02:34.152864] Time taken to execute 'solve_part_2' was 0.00220489501953125 seconds
+[2023-12-02 10:06:57.690074] Time taken to execute 'solve_part_2' was 0.0014271736145019531 seconds
