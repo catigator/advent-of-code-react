@@ -70,9 +70,9 @@ def download_all(day):
     print(f"Downloading Day {day}")
 
     download_input(day)
-    download_puzzle(day)
+    # download_puzzle(day)
     download_examples(day)
-    download_puzzle_html(day)
+    # download_puzzle_html(day)
     print(f"Download complete!")
 
 
