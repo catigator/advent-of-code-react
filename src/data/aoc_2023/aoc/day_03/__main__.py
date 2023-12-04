@@ -13,6 +13,8 @@ import re
 
 INPUT_FILENAME = "aoc/day_03/INPUT.txt"
 EXAMPLE_FILENAME = "aoc/day_03/EXAMPLE_01.txt"
+WEIRD_EXAMPLE = "aoc/day_03/WEIRD_EXAMPLE.txt"
+
 
 
 @dataclass
@@ -40,7 +42,6 @@ def check_if_has_adjacent_symbol(number: Number, lines):
             chars = lines[row][start:end]
             if any(c not in NON_SYMBOL_CHARS for c in chars):
                 return True
-
     return False
 
 
@@ -62,7 +63,7 @@ def get_numbers_for_line(line: str, row: int) -> List[Number]:
 @time_it
 def solve_part_1():
     print("Day 03 - Part 1")
-    lines = read_input_lines(EXAMPLE_FILENAME)
+    lines = read_input_lines(INPUT_FILENAME, strip_whitespace=True)
     part_numbers = []
     for i, line in enumerate(lines):
         numbers = get_numbers_for_line(line, i)
