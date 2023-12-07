@@ -1,3 +1,4 @@
+from collections import defaultdict
 from typing import List
 
 from utils.decorators import time_it
@@ -46,13 +47,40 @@ def solve_part_1():
     print(f"The cards are worth {sum(total_points)} points")
 
 
+def get_prize_cards(card_nbr: int, matches: int):
+    return [card_nbr + 1 + i for i in range(matches)]
 
 
 @time_it
 def solve_part_2():
     print("Day 04 - Part 2")
+    lines = read_input_lines(INPUT_FILENAME)
+    cards = defaultdict(int)
+    total_points = []
+
+    for i, line in enumerate(lines):
+        cards[i+1] += 1
+        split_line = line.split(": ")
+        card_nbr = int(split_line[0][4:])
+        winning_numbers, my_numbers = split_line[1].split("| ")
+        winning_numbers = winning_numbers.strip().split()
+        my_numbers = my_numbers.strip().split()
+
+        matches = matching_numbers(winning_numbers, my_numbers)
+        points = get_matching_points(matches)
+
+        prizes = get_prize_cards(card_nbr, matches)
+        for prize in prizes:
+            extra_cards = cards[i+1]
+            cards[prize] += extra_cards
+
+        # total_points += (cards[i] + 1) * points
+
+    total_cards = sum(card for card in cards.values())
+
+    print(f"You end up with {total_cards} cards")
 
 
 if __name__ == "__main__":
-    solve_part_1()
-    # solve_part_2()
+    # solve_part_1()
+    solve_part_2()

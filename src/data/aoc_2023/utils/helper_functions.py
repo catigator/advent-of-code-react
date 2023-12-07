@@ -14,7 +14,7 @@ def read_input(filename: str) -> str:
     return input_str
 
 
-def read_input_lines(filename: str, strip_whitespace: bool=False) -> List[str]:
+def read_input_lines(filename: str, strip_whitespace: bool=True) -> List[str]:
     """
 
     :param filename:
