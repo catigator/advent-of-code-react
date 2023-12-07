@@ -47,6 +47,9 @@ def get_distance_for_hold_time(hold_time: int, total_time: int):
 def calculate_highest(time, record_distance):
     ways_to_beat_record = 0
     for hold_time in range(time + 1):
+        # if hold_time % 10000 == 0:
+        #     print(".")
+
         distance = get_distance_for_hold_time(hold_time, time)
         if distance > record_distance:
             ways_to_beat_record += 1
@@ -72,7 +75,7 @@ def calculate_highest_for_all_times(times, distances):
 @time_it
 def solve_part_1():
     print("Day 06 - Part 1")
-    lines = read_input_lines(INPUT_FILENAME)
+    lines = read_input_lines(EXAMPLE_FILENAME)
     times, distances = parse_lines(lines)
     calculate_highest_for_all_times(times, distances)
 
@@ -80,8 +83,23 @@ def solve_part_1():
 @time_it
 def solve_part_2():
     print("Day 06 - Part 2")
+    lines = read_input_lines(INPUT_FILENAME)
+    times, distances = parse_lines(lines)
+
+    time_str = ""
+    for t in times:
+        time_str += str(t)
+    time = int(time_str)
+
+    distance_str = ""
+    for d in distances:
+        distance_str += str(d)
+    distance = int(distance_str)
+
+    ways_to_beat_record = calculate_highest(time, distance)
+    print(f"There are {ways_to_beat_record} ways to beat the record")
 
 
 if __name__ == "__main__":
-    solve_part_1()
-    # solve_part_2()
+    # solve_part_1()
+    solve_part_2()
