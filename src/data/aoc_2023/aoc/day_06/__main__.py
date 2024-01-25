@@ -14,6 +14,8 @@ import math
 INPUT_FILENAME = "aoc/day_06/INPUT.txt"
 EXAMPLE_FILENAME = "aoc/day_06/EXAMPLE_01.txt"
 
+DISTANCES = {}
+
 
 def parse_lines(lines: List[str]):
     line_1 = lines[0]
@@ -39,9 +41,12 @@ def get_distance(speed: int, time: int):
 def get_distance_for_hold_time(hold_time: int, total_time: int):
 
     remaining_time = total_time - hold_time
+    return remaining_time * hold_time
+
     speed = get_speed(hold_time)
 
-    return get_distance(speed, remaining_time)
+    distance = get_distance(speed, remaining_time)
+    return distance
 
 
 def calculate_highest(time, record_distance):
