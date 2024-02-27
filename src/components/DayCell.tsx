@@ -1,6 +1,9 @@
 import React from "react";
 
+import { useAtom } from 'jotai';
 import '../css/DayCell.scss';
+import { DayAtom } from "../components/DayAtom";
+
 
 interface CellProps {
   day: number,
@@ -8,8 +11,11 @@ interface CellProps {
 
 const DayCell = (props: CellProps) => {
 
+  const [day, setDay]: any = useAtom<number>(DayAtom);
+
   let onclick = () => {
       console.log("clicked!   " + props.day);
+      setDay(props.day);
   }
   
   let dayText = props.day.toString();
@@ -25,7 +31,7 @@ const DayCell = (props: CellProps) => {
   }
 
   let selectedDay = "";
-  if (props.day === 1) {
+  if (props.day === day) {
     selectedDay = " selectedDay"
   }
 
