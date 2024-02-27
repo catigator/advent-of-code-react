@@ -20,7 +20,7 @@ const DayCell = (props: CellProps) => {
   
   let dayText = props.day.toString();
 
-  let canOpen = 5 - props.day > 0;
+  let canOpen = 8 - props.day > 0;
   if (dayText === "-") {
     canOpen = false;
   }

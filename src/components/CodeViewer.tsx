@@ -60,6 +60,14 @@ let GetPythonString = function (day: Number): string {
     return pythonDay2String;
   } else if (day === 3) {
     return pythonDay3String;
+  } else if (day === 4) {
+    return pythonDay4String;
+  } else if (day === 5) {
+    return pythonDay5String;
+  } else if (day === 6) {
+    return pythonDay6String;
+  } else if (day === 7) {
+    return pythonDay7String;
   }
   return "";
 }
