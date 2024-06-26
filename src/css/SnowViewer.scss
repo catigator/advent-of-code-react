@@ -8,11 +8,15 @@
     background: Variables.$kinda-beige;
     overflow-y:scroll;
     color: Variables.$kinda-black;
-    outline: Variables.$outline-blue;
+    outline: Variables.$outline;
     outline-offset: -1.5px;
     border-bottom-right-radius: Variables.$border-radius;
     border-bottom-left-radius: Variables.$border-radius;
 
+ }
+
+ .container-problem-snow {
+    outline: Variables.$outline-blue;
  }
 
  .snow-viewer-header {

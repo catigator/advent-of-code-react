@@ -16,7 +16,7 @@ const SnowViewer = () => {
         <div className="snow-viewer-header">
           Snow
         </div>
-        <div className="snow-viewer container-problem">
+        <div className="snow-viewer container-problem container-problem-snow">
           It is currently snowing!
       </div>
       </div>
