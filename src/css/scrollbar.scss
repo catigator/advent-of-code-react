@@ -4,19 +4,26 @@
 ::-webkit-scrollbar {
     width: 10px !important;
     height: 10px !important;
+    background: Variables.$kinda-beige;
+    border-radius: Variables.$border-radius;
+  }
+
+   /* Corner (Transparent!)*/
+   ::-webkit-scrollbar-corner {
+    background: rgba(0,0,0,0); 
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: white; 
+    background: Variables.$kinda-beige; 
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: Variables.$kinda-black; 
+    background: Variables.$kinda-red; 
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: Variables.$kinda-black; 
+    background: Variables.$kinda-red; 
   }

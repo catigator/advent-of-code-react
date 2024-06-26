@@ -5,16 +5,19 @@
     width: calc(100% - 2em);
     // height: 3em;
     padding: 1em;
-    background: Variables.$kinda-white;
+    background: Variables.$kinda-beige;
     overflow-y:scroll;
     color: Variables.$kinda-black;
     outline: Variables.$outline;
     outline-offset: -1.5px;
+    border-bottom-right-radius: Variables.$border-radius;
+    border-bottom-left-radius: Variables.$border-radius;
+
  }
 
 .puzzle-viewer-component {
     margin: Variables.$margin-components;
-    height: calc(100% - 16.5em);
+    // height: calc(100% - 16.5em);
     width: 100%;
 }
 

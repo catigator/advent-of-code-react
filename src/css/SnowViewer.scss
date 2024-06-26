@@ -1,0 +1,66 @@
+@use "Variables";
+
+.container-problem {
+    align-self: stretch;
+    width: calc(100% - 2em);
+    // height: 3em;
+    padding: 1em;
+    background: Variables.$kinda-beige;
+    overflow-y:scroll;
+    color: Variables.$kinda-black;
+    outline: Variables.$outline-blue;
+    outline-offset: -1.5px;
+    border-bottom-right-radius: Variables.$border-radius;
+    border-bottom-left-radius: Variables.$border-radius;
+
+ }
+
+ .snow-viewer-header {
+    flex-basis: 100%;
+    width: 100%;
+    font-size: 1.5em;
+    height: 1.5em;
+    background: Variables.$kinda-blue;
+    color: Variables.$kinda-beige;
+    border-top-right-radius: Variables.$border-radius;
+    border-top-left-radius: Variables.$border-radius;
+}
+
+
+.snow-viewer-component {
+    margin: Variables.$margin-components;
+    // height: calc(100% - 16.5em);
+    width: 100%;
+}
+
+.snow-viewer .day-desc {
+    padding: 1em;
+    font-size: large;
+    text-align: left;
+}
+
+article em.star {
+    color: #ff6666;
+    font-style: normal;
+    text-shadow: 0 0 5px #ff6666;
+}
+
+article pre {
+    // This is not actually used for whatever reason
+    font-family: 'Space Mono' !important;
+    // color: Variables.$kinda-white;
+    // background: Variables.$kinda-black;
+    text-align: left;
+    white-space: pre;
+    display: block;
+    text-indent: 2em;
+    padding-top: 1em;
+}
+
+code {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    white-space-collapse: preserve;
+}

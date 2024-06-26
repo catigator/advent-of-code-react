@@ -2,8 +2,8 @@
 
 
 .day-cell {
-    background: Variables.$kinda-white;
-    outline: Variables.$outline;
+    background: Variables.$kinda-beige;
+    // outline: Variables.$kinda-white;
 
     width: 2.5em;
     height: 2.5em;
@@ -23,7 +23,7 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     font-size: 1.5em;
-    color: Variables.$kinda-black;
+    color: Variables.$kinda-red;
 }
 
 .cannotOpen .day-cell-text {
@@ -31,13 +31,13 @@
 }
 
 .canOpen.day-cell:hover .day-cell-text {
-    color: Variables.$kinda-white;
+    color: Variables.$kinda-beige;
 }
 
 .day-cell.selectedDay {
-    background: Variables.$kinda-black;
+    background: Variables.$kinda-red;
     .day-cell-text {
-        color: Variables.$kinda-white;
+        color: Variables.$kinda-beige;
     }
 }
 

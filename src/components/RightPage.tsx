@@ -1,5 +1,6 @@
 import React from "react";
 import PuzzleViewer from "./PuzzleViewer";
+import SnowViewer from "./SnowViewer";
 import '../css/RightPage.scss';
 
 
@@ -22,6 +23,7 @@ const RightPage = () => {
       <div className="right-app">
         {reactConfigBar}
         <PuzzleViewer/>
+        <SnowViewer/>
       </div>
     </React.Fragment>
   )

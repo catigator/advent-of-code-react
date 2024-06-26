@@ -5,8 +5,10 @@
     width: 100%;
     font-size: 1.5em;
     height: 1.5em;
-    background: Variables.$kinda-black;
-    color: Variables.$kinda-white;
+    background: Variables.$kinda-red;
+    color: Variables.$kinda-beige;
+    border-top-right-radius: Variables.$border-radius;
+    border-top-left-radius: Variables.$border-radius;
 }
 
 .code-viewer-container {
@@ -21,8 +23,8 @@
 
 .code-viewer {
     
-    background: linear-gradient(135deg,#f3f6ff, #e1e7ff);
-    background: Variables.$kinda-white;
+    // background: linear-gradient(135deg,#f3f6ff, #e1e7ff);
+    background: Variables.$kinda-beige;
     outline: Variables.$outline;
     display: flex;
     // outline-offset: -1.5px;
@@ -31,6 +33,7 @@
     caret-color: transparent;
     flex-shrink: 0;
     flex-wrap: wrap;
+    border-radius: Variables.$border-radius;
   }
 
   .code-container {
@@ -39,8 +42,9 @@
     margin: auto;
     display: flex;
     flex-grow: 1;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     margin-top: 0;
+    margin-left: 10px; // need this to not have scrollbar extend past edge
   }
 
   code[class*="language-python"], pre[class*="language-python"] {

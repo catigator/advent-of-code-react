@@ -10,9 +10,16 @@ $kinda-black:rgb(45, 45, 45);
 $kinda-white: rgb(250, 253, 253);
 $kinda-white: white;
 // $kinda-grey: rgb(209, 211, 212);
-$kinda-grey: $kinda-white;
+$kinda-red: #aa3f5b;
+$kinda-blue: #3f4faa;
 
-$outline: 1.5px solid $kinda-black;
+
+$kinda-grey: $kinda-white;
+$kinda-beige: rgb(248, 237, 232);
+
+$outline: 1.5px solid $kinda-red;
+$outline-blue: 1.5px solid $kinda-blue;
+$border-radius: 15px;
 
 
 // Grid
