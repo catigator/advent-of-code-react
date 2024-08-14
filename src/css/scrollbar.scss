@@ -4,7 +4,7 @@
 ::-webkit-scrollbar {
     width: 10px !important;
     height: 10px !important;
-    background: Variables.$kinda-beige;
+    background: Variables.$kinda-white;
     border-radius: Variables.$border-radius;
   }
 
@@ -15,15 +15,15 @@
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: Variables.$kinda-beige; 
+    background: Variables.$kinda-white; 
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: Variables.$kinda-red; 
+    background: Variables.$bluey; 
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: Variables.$kinda-red; 
+    background: Variables.$bluey; 
   }

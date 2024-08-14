@@ -1,4 +1,10 @@
 
+
+// New
+
+$bluey: rgb(100 172 229);
+$whitey: rgb(255 255 255);
+
 // General
 
 $margin-edges: 2em;
@@ -17,8 +23,8 @@ $kinda-blue: #3f4faa;
 $kinda-grey: $kinda-white;
 $kinda-beige: rgb(248, 237, 232);
 
-$outline: 1.5px solid $kinda-red;
-$outline-blue: 1.5px solid $kinda-blue;
+$outline: 1.5px solid $bluey;
+$outline-blue: 1.5px solid $bluey;
 $border-radius: 15px;
 
 

@@ -5,8 +5,8 @@
     width: 100%;
     font-size: 1.5em;
     height: 1.5em;
-    background: Variables.$kinda-red;
-    color: Variables.$kinda-beige;
+    background: Variables.$bluey;
+    color: Variables.$kinda-white;
     border-top-right-radius: Variables.$border-radius;
     border-top-left-radius: Variables.$border-radius;
 }
@@ -24,7 +24,7 @@
 .code-viewer {
     
     // background: linear-gradient(135deg,#f3f6ff, #e1e7ff);
-    background: Variables.$kinda-beige;
+    background: Variables.$kinda-white;
     outline: Variables.$outline;
     display: flex;
     // outline-offset: -1.5px;

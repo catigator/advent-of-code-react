@@ -33,7 +33,7 @@ const LeftPage = () => {
           </div>
           <div className='title-container'>
             <div className='title'>
-              <h1>Advent of Code 2023</h1>
+              <h1>ADVENT<br/>OF CODE</h1>
             </div>
           </div>
         </div>

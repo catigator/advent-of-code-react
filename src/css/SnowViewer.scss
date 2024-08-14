@@ -5,7 +5,7 @@
     width: calc(100% - 2em);
     // height: 3em;
     padding: 1em;
-    background: Variables.$kinda-beige;
+    background: Variables.$kinda-white;
     overflow-y:scroll;
     color: Variables.$kinda-black;
     outline: Variables.$outline;
@@ -24,8 +24,8 @@
     width: 100%;
     font-size: 1.5em;
     height: 1.5em;
-    background: Variables.$kinda-blue;
-    color: Variables.$kinda-beige;
+    background: Variables.$bluey;
+    color: Variables.$kinda-white;
     border-top-right-radius: Variables.$border-radius;
     border-top-left-radius: Variables.$border-radius;
 }
